@@ -64,7 +64,7 @@ cmake ..
 If you do want to specify a specific location, where rapid assist should be installed, you can provide an extra option to cmake at this step `-DCMAKE_INSTALL_PREFIX=c:\projects\install\rapidassist`
 If you do not spefiy this, cmake will install that library into its default location, which differs from system to system. On Windows it is `c:\progam files (x86)\rapidassis` and for this admin rights are needed.
 
-If you choos to install your libraries into a separate folder, cmake doen't know where to search for rapidassist, when you try to build another project, win32arduino for example.
+If you choos to install your libraries into a separate folder, cmake doesn't know where to search for rapidassist, when you try to build another project, win32arduino for example.
 So do not forget, to tell cmake where to search for this with the environment variable on windows for example `set CMAKE_PREFIX_PATH=c:\projects\install`. Cmake will then look at this location for already installed libraries.
 
 3) Build the source code:
